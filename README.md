@@ -1,3 +1,8 @@
+This is a simple GroupMe bot project for amusement purposes. My friend is in a GroupMe chat,
+and likes to respond to 'I love you' messages with 'I love you too' (no matter to who its from/to).
+So I created this bot to do that work for him. It uses this starter code,
+and a Heroku server to host the bot server. Hopefully all should work right now, have fun UCSC!
+
 # Sample GroupMe NodeJS Callback Bot
 
 ## Introduction
