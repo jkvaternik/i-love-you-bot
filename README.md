@@ -3,6 +3,8 @@ and likes to respond to 'I love you' messages with 'I love you too' (no matter t
 So I created this bot to do that work for him. It uses this starter code,
 and a Heroku server to host the bot server. Hopefully all should work right now, have fun UCSC!
 
+I used this starter code as a resource. Attached is it's README.
+
 # Sample GroupMe NodeJS Callback Bot
 
 ## Introduction
