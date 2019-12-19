@@ -1,13 +1,22 @@
 var HTTPS = require('https');
-var cool = require('cool-ascii-faces');
 
 var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/cool guy$/;
+  
+  const botRegexOne = /I love you/;
+  const botRegexTwo = /i love you/;
+  const botRegexThree = /I love u/;
+  const botRegexFour = /i love u/;
+  const botRegexFive = /I luv you/;
+  const botRegexSix = /i luv you/;
+  const botRegexSeven = /I luv u/;
+  const botRegexEight = /i luv u/;
 
-  if(request.text && botRegex.test(request.text)) {
+  if (request.text && (botRegexOne.test(request.text) || botRegexTwo.test(request.text) || botRegexThree.test(request.text)
+            || botRegexFour.test(request.text) || botRegexFive.test(request.text) || botRegexSix.test(request.text)
+            || botRegexSeven.test(request.text) || botRegexEight.test(request.text)) && request.name !== "Phil's Bot") {
     this.res.writeHead(200);
     postMessage();
     this.res.end();
